@@ -22,16 +22,21 @@ a{
     text-decoration: none;
 }
 .menu{
-    width: 100%;
+   height: 70%;
+   background-color: #1b1b1b;
 }
-.navbar{
+.left{
+    width:25%;
+    float: left;
+}
+.titleMenu .navbar{
     position: fixed;
-  width: 250px;
+ 
   height: 100%;
   background: #1b1b1b;
   transition: left 0.4s ease;
 }
-.navbar .left{
+.navbar .titleMenu{
     color: white;
   font-size: 25px;
   font-weight: bold;
@@ -42,7 +47,7 @@ a{
 }
 nav ul{
     background: #1b1b1b;
-    height: 100%;
+    
     width: 100%;
     list-style: none;
 }
@@ -68,17 +73,71 @@ nav ul li a:hover{
     border-left-color:lightslategray;
     border-right-color:lightslategray;
 }
+
 .right{
     height: 100%;
     width:75%;
     background-color: black;
+    float: right;
+}
+.socialdiv{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fb{
+    width: 250px;
+    height: 155px;
     float: left;
+
+}
+.fb:hover{
+    background-color: #4668b3;
+}
+.yt{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.yt:hover{
+    background-color: #d94348;
+}
+.tw{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.tw:hover{
+    background-color: #6441a5;
+}
+.am{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.am:hover{
+    background-color: #e47911;
 }
 .social{
-
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
+    margin-left: auto;
+    margin-right: auto;
 }
-footer{
-
+.footer{
+    text-align: center;
+    background-color: #222222;
+    color: white;
+}
+.conteiner{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
 .clear{
     clear: both;
