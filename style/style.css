@@ -1,53 +1,78 @@
-body{
+*{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 0;
     padding: 0 0 ;
-}
-nav{
-
+    user-select: none;
+    box-sizing: border-box;
 }
 .title{
     text-align: center;
-    background-color:lightgray;
-    font-size: 28px;
+    background-color:#1b1b1b;
+    font-size: 34px;
     font-weight: bold;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 60px;
 }
 .img-resp{
     width: 100%;
 }
 a{  
-    color: black;
+    color: white;
     text-decoration: none;
 }
-.left{
-    width:25%;
-    background-color:darkgray;
-    text-align: center;
+.menu{
+    width: 100%;
 }
-.menu ul{
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-   
+.navbar{
+    position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
 }
-.menu ul li{
-    border: 1px solid black;
-    background-color: lightgrey;
-    border-radius: 5px;
-    padding: 1%;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    
-}
-.menu ul li:hover{
-    cursor:pointer;
+.navbar .left{
     color: white;
-    background-color: darkgrey;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+}
+nav ul{
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    display: block;
+    padding: 2%;
+    width: 100%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+nav ul li a:hover{
+    color: lightslategray;
+    font-size: 22px;
+    background-color: #1e1e1e;
+    border-left-color:lightslategray;
+    border-right-color:lightslategray;
 }
 .right{
+    height: 100%;
     width:75%;
-    background-color: gray;
+    background-color: black;
+    float: left;
 }
 .social{
 
