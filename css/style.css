@@ -175,7 +175,7 @@ p{
     text-align: center;
     border-radius: 30px;
     font-weight: bolder;
-    border: 3px solid #4668b3;
+    border: 3px solid #1b1b1b;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -189,7 +189,7 @@ p{
     width: 0;
     height: 100%;
     border-radius: 30px;
-    background-color:#4668b3;
+    background-color:gray;
     position: absolute;
     left: 0;
     bottom: 0;
