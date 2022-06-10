@@ -254,15 +254,11 @@ p{
     border-bottom: 1px solid #dddddd;
 }
 .button-box2 tbody tr:nth-of-type(even) {
-    
+    background-color: #f3f3f3;
     background-color: var(--bg-color);
     border-color: var(--bg-color);
 }
-.button-box2 tbody tr:nth-of-type(even):hover {
-    background-color: lightslategray;
-    transform: scale(1.1);
-    transition: transform 300ms;
-}
+
 .button-box2 tbody tr:last-of-type {
     border-bottom: 2px solid #808080;
 }
@@ -270,6 +266,54 @@ p{
 .button-box2 tbody tr.active-row {
     font-weight: bold;
     color: #1e1e1e;
+}
+.form-box3{
+    width: 80%;
+    margin: 1% auto;
+    background: linear-gradient(to right, white, 	#808080);
+    padding: 5px;
+    overflow:hidden;
+    border: 1px solid  black;
+    border-radius: 10px;
+}
+.button-box3{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.button-box3 thead tr{
+    background-color: #808080;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.button-box3 th,
+.button-box3 td {
+    padding: 12px 15px;
+}
+
+.button-box3 tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.button-box3 tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.button-box3 tbody tr:last-of-type {
+    border-bottom: 2px solid #808080;
+}
+
+.button-box3 tbody tr.active-row {
+    font-weight: bold;
+    color: #1b1b1b;
 }
 
 .input-group{
