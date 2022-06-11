@@ -1,33 +1,4 @@
-<div class="doc"></div>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
-    <title>Main page</title>
-</head>
-<body>
-           <div class="title">
-           <a href="index.php">
-            <span style="color: #808080">DashBoard</span>App.com
-               </a>
-           </div>
-    <div class="menu">
-        <div class="left">
-        <nav class="navbar">
-            <div class="titleMenu">Menu</div>
-            <ul>
-                <li><a href="controls.html">HTML</a></li>
-                <li><a href="employees.html">Employees</a></li>
-                <li><a href="vat.html">Invoices Vat</a></li>
-                <li><a href="delegation.html">Delegation</a></li>
-                <li><a href="contractors.html">Contractors</a></li>
-            </ul>
-        </nav>
-        </div>
+<?php include('part/menu.php');?>
         
         <div class="right">
             <div class="form-box3">
@@ -101,34 +72,5 @@
     </div>
    
    
-    <section class="Social">
-        <div class="social">
-      
-            <div class="socialdiv">
-                <div class="fb">
-                  <a href=" https://www.facebook.com/"><i class="icon-facebook-squared"></i></a>
-                </div>
-                <div class="yt">
-                    <a href="https://www.youtube.com/"><i class="icon-youtube-play"></i></a>
-                </div>
-                <div class="tw">
-                    <a href="https://www.twitch.tv/"><i class="icon-twitch"></i></a>
-                </div>
-                <div class="am">
-                   <a href="https://www.amazon.de/"><i class="icon-amazon" ></i></a>
-    
-                </div>
-                <div style="clear: both"> </div>
-            </div>
-       
-    </div>
-    </section>
-
-
-<section class="Footer">
-    <div class="conteiner">
-        <div class="footer">DashboardApp.com &copy; 2022 Thank you for your visit</div>
-</div>
-</section>
-</body>
-</html>
+    <?php include('part/social.php');?>
+    <?php include('part/footer.php');?>
