@@ -360,6 +360,51 @@ input:is(:focus, :valid) {
     background: linear-gradient(to right, #808080, 	#000000);
    
 }
+.submit-btn2{
+    padding: 10px 30px;
+    cursor: pointer;
+    display: inline;
+    margin-left: 2%;
+    background: linear-gradient(to right, #000000, 	#808080);
+    border:0;
+    outline:none;
+    border-radius: 30px;
+    color:#fff;
+}
+.submit-btn2:hover{
+    background: linear-gradient(to right, #808080, 	#000000);
+   
+}
+.submit-btn3{
+    padding: 10px 30px;
+    cursor: pointer;
+    display: inline;
+    margin: auto;
+    background: linear-gradient(to right, #000000, 	red);
+    border:0;
+    outline:none;
+    border-radius: 30px;
+    color:#fff;
+}
+.submit-btn3:hover{
+    background: linear-gradient(to right, red, 	#000000);
+   
+}
+.submit-btn4{
+    padding: 10px 30px;
+    cursor: pointer;
+    display: inline;
+    margin: auto;
+    background: linear-gradient(to right, #000000, 	goldenrod);
+    border:0;
+    outline:none;
+    border-radius: 30px;
+    color:#fff;
+}
+.submit-btn4:hover{
+    background: linear-gradient(to right, goldenrod, 	#000000);
+   
+}
 select{
     border: 1px solid black;
     border-radius: 5px;
