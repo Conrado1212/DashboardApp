@@ -20,11 +20,11 @@
         <nav class="navbar">
             <div class="titleMenu">Menu</div>
             <ul>
-                <li><a href="controls.html">HTML</a></li>
-                <li><a href="employees.html">Employees</a></li>
-                <li><a href="vat.html">Invoices Vat</a></li>
-                <li><a href="delegation.html">Delegation</a></li>
-                <li><a href="contractors.html">Contractors</a></li>
+                <li><a href="controls.php">HTML</a></li>
+                <li><a href="employees.php">Employees</a></li>
+                <li><a href="vat.php">Invoices Vat</a></li>
+                <li><a href="delegation.php">Delegation</a></li>
+                <li><a href="contractors.php">Contractors</a></li>
             </ul>
         </nav>
         </div>

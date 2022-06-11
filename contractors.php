@@ -6,34 +6,63 @@
                 <table class="button-box3">
                     <thead>
                     <tr >
-                        <th>delegationId</th>
-                        <th>fullName</th>
-                        <th>Data from</th>
-                        <th>Data to</th>
-                        <th>Place  from </th>
-                        <th>Place  to</th>
+                        <th>ContractornId</th>
+                        <th>Regon</th>
+                        <th>name</th>
+                        <th>Vat?</th>
+                        <th>street</th>
+                        <th>numberH</th>
+                        <th>AnumberF</th>
                         <th>Action</th>
-                       
-                        
-                    </tr>
+                        </tr>
                     </thead>
+                <?php
+                $sql = "SELECT * from contractor";
+
+                $res = mysqli_query($conn, $sql) pr die(mysqli_error()); //save to database
+
+                if(if$res==TRUE){
+                    $rows=mysqli_num_rows($res);
+
+                    if($rows>0){
+                        while($rows = mysqli_fetch_assoc($res)){
+                            $contractorId = $rows['contractorId'];
+                            $regon = $rows['regon'];
+                            $name = $rows['name'];
+                            $vat = $rows['vat'];
+                            $street = $rows['street'];
+                            $numberH = $rows['numberH'];
+                            $numberF = $rows['numberF'];
+    
+                   
+                ?>
                           <tbody>
                           <tr class="active-row">
-                            <td>1</td>
-                            <td>xx</td>
-                            <td>Stychurski</td>
-                            <td>Manager</td>
-                            <td>21.04.2020</td>
-                            <td>20</td> 
+                            <td><?php echo $contractorId ;?></td>
+                            <td><?php echo $regon ;?></td>
+                            <td><?php echo $name ;?></td>
+                            <td><?php echo $vat ;?></td>
+                            <td><?php echo $street ;?></td>
+                            <td><?php echo $numberH ;?></td> 
+                            <td><?php echo $numberF ;?></td> 
                             <td>
-                                <a href="#" class="submit-btn4">Update</a>
-                                <a href="#" class="submit-btn3">Delete</a>
+                                <a href="update.php?delegationId=<?php echo $delegationId;?>" class="submit-btn4">Update</a>
+                                <a href="delete.php?delegationId=<?php echo $delegationId;?>" class="submit-btn3">Delete</a>
                             </td> 
                             
                          
                                                                     
                         </tr>
                         </tbody>
+                        <?php
+                     }
+                    }else{
+
+                    }
+                }else{
+
+                }
+                ?>
                 </table>
                 </div>
             
