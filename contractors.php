@@ -19,9 +19,9 @@
                 <?php
                 $sql = "SELECT * from contractor";
 
-                $res = mysqli_query($conn, $sql) pr die(mysqli_error()); //save to database
+                $res = mysqli_query($conn, $sql) or die(mysqli_error()); //save to database
 
-                if(if$res==TRUE){
+                if($res==TRUE){
                     $rows=mysqli_num_rows($res);
 
                     if($rows>0){
@@ -71,8 +71,5 @@
         
     </div>
    
-   
-<?php include('part/social.php');?>
-
-
+    <?php include('part/social.php');?>
 <?php include('part/footer.php');?>
