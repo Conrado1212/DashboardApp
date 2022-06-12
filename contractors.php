@@ -12,6 +12,10 @@
             echo $_SESSION['del'];  
             unset($_SESSION['del']); //remove session
           }
+          if(isset($_SESSION['upd'])){
+            echo $_SESSION['upd'];  
+            unset($_SESSION['upd']); //remove session
+          }
           ?>
           </br>
           </br>

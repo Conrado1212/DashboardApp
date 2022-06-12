@@ -16,8 +16,8 @@
                     <input type="text" class="input-field" name="Nip" placeholder="Your NIP" required>
                   <input type="text" class="input-field" name="Regon" placeholder="Your REGON" required>
                   <input type="text" class="input-field" name="name" placeholder="Your name" required>
-                 <h2>Vat ?</h2> <input type="radio"  name="vat" values="YES">YES
-                 <input type="radio"   name="vat" values="No" >NO 
+                 <h2>Vat ?</h2> <input type="radio"  name="vat" values="on">On
+                 <input type="radio"   name="vat" values="off" >Off 
                  </br></br> <input type="text" class="input-field" name="street" placeholder="Your street" required>
                   <input type="text" class="input-field" name="numberH" placeholder="Your houseNumber" required>
                   <input type="text" class="input-field" name="numberF" placeholder="Your flatNumber" required>
