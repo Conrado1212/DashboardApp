@@ -15,49 +15,40 @@
                         
                     </tr>
                     </thead>
+                    <?php
+                        $sql = "SELECT * from delegation";
+
+                        $res= mysqli_query($conn,$sql) or die(mysqli_error());
+
+                        if($res==true){
+                            $rows = mysqli_num_rows($res);
+
+                            if($rows>0){
+                                while($rows=mysqli_fetch_assoc($res)){
+                                    $delegationId=$rows['delegationId'];
+                                    $fullName=$rows['fullName'];
+                                    $DataFrom=$rows['DataFrom'];
+                                    $DataTo=$rows['DataTo'];
+                                    $PlaceFrom=$rows['PlaceFrom'];
+                                    $PlaceTo=$rows['PlaceTo'];
+                           
+                    ?>
                           <tbody>
                           <tr class="active-row">
-                            <td>1</td>
-                            <td>xx</td>
-                            <td>Stychurski</td>
-                            <td>Manager</td>
-                            <td>21.04.2020</td>
-                            <td>20</td> 
-                            
-                            <tr class="active-row">
-                                <td>2</td>
-                                <td>xxx</td>
-                                <td>Stychurski</td>
-                                <td>Manager</td>
-                                <td>21.04.2020</td>
-                                <td>20</td> 
-                                           
-                                <tr class="active-row">
-                                    <td>3</td>
-                                    <td>Manxxxiek</td>
-                                    <td>Stychurski</td>
-                                    <td>Manager</td>
-                                    <td>21.04.2020</td>
-                                    <td>20</td>  
-                                                
-                                    <tr class="active-row">
-                                        <td>4</td>
-                                        <td>Maniek</td>
-                                        <td>Stychurski</td>
-                                        <td>Manager</td>
-                                        <td>21.04.2020</td>
-                                        <td>20</td>  
-                                            
-                                        <tr class="active-row">
-                                            <td>5</td>
-                                            <td>Maniek</td>
-                                            <td>Stychurski</td>
-                                            <td>Manager</td>
-                                            <td>21.04.2020</td>
-                                            <td>20</td>      
+                            <td><?php echo $delegationId ;?></td>
+                            <td><?php echo $fullName ;?></td>
+                            <td><?php echo $DataFrom ;?></td>
+                            <td><?php echo $DataTo ;?></td>
+                            <td><?php echo $PlaceFrom ;?></td>
+                            <td><?php echo $PlaceTo ;?></td> 
                                                                     
                         </tr>
                         </tbody>
+                        <?php
+                        }
+                    }
+                }
+                        ?>
                 </table>
                 </div>
             
