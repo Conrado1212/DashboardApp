@@ -324,7 +324,7 @@ p{
  }
 
 .input-field{
-    width:50%;
+    width:60%;
     padding: 10px 0;
     margin: 5px 0;
     border-left: 0;
@@ -336,6 +336,7 @@ p{
     transition: all 0.2s linear;
     border-radius: 6px;
     text-align: center;
+    font-size: 24px;
     
 }
 input:is(:focus, :valid) {

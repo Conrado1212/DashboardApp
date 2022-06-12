@@ -2,6 +2,14 @@
 
         <div class="right">
             <a href="addContractor.php" class="submit-btn2">Add Contractor</a>
+            <?php
+          if(isset($_SESSION['add'])){
+            echo $_SESSION['add'];  
+            unset($_SESSION['add']); //remove session
+          }
+          ?>
+          </br>
+          </br>
             <div class="form-box3">
                 <table class="button-box3">
                     <thead>
