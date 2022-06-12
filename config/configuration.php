@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 define('URL','http://localhost/DashboardApp/');
 define('LOCALHOST','localhost');
 define('DB_USERNAME','root');

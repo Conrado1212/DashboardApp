@@ -66,7 +66,7 @@ if(isset($_POST['submit'])){
 
         header("location:".URL.'contractors.php');
     }else{
-        $_SESSION['add'] = '<div class="submit-btn">Added successfully</div>';
+        $_SESSION['add'] = '<div class="submit-btn">Added failed</div>';
 
         header("location:".URL.'addContractor.php');
     }
