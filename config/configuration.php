@@ -1,6 +1,6 @@
 <?php
 
-define('URL','http://localhost/DashboardApp');
+define('URL','http://localhost/DashboardApp/');
 define('LOCALHOST','localhost');
 define('DB_USERNAME','root');
 define('DB_PASSWORD','');

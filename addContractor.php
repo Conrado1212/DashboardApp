@@ -13,8 +13,8 @@
             
     
             <form action="" method="POST" class="input-group">
-                    <input type="text" class="input-field" name="NIP" placeholder="Your NIP" required>
-                  <input type="text" class="input-field" name="REGON" placeholder="Your REGON" required>
+                    <input type="text" class="input-field" name="Nip" placeholder="Your NIP" required>
+                  <input type="text" class="input-field" name="Regon" placeholder="Your REGON" required>
                   <input type="text" class="input-field" name="name" placeholder="Your name" required>
                  <h2>Vat ?</h2> <input type="radio"  name="vat" values="YES">YES
                  <input type="radio"   name="vat" values="No" >NO 
@@ -22,7 +22,7 @@
                   <input type="text" class="input-field" name="numberH" placeholder="Your houseNumber" required>
                   <input type="text" class="input-field" name="numberF" placeholder="Your flatNumber" required>
                   
-            </br></br><button type="submit" name="submit" value="Add admin" class="submit-btn">Add here</button>
+            </br></br><button type="submit" name="submit" value="Add contractor" class="submit-btn">Add here</button>
     
             </form>
                 </div>
@@ -34,8 +34,8 @@
 <?php include('part/footer.php'); ?>
 <?php
 if(isset($_POST['submit'])){
-    $NIP=mysqli_real_escape_string($conn,$_POST['NIP']);
-    $REGON=mysqli_real_escape_string($conn,$_POST['REGON']);
+    $Nip=mysqli_real_escape_string($conn,$_POST['Nip']);
+    $Regon=mysqli_real_escape_string($conn,$_POST['Regon']);
     $name=mysqli_real_escape_string($conn,$_POST['name']);
 
     if(isset($_POST['vat'])){
@@ -50,12 +50,13 @@ if(isset($_POST['submit'])){
     $numberF=mysqli_real_escape_string($conn,$_POST['numberF']);
 
     $sql = "INSERT INTO contractor set
-    NIP = '$NIP',
-    REGON = '$REGON',
+    Nip = '$Nip',
+    Regon = '$Regon',
+    name = '$name',
     vat = '$vat',
     street = '$street',
     numberH = '$numberH',
-    numberF = '$$numberF'
+    numberF = '$numberF'
     ";
 
     $res = mysqli_query($conn,$sql) or die(mysqli_error());

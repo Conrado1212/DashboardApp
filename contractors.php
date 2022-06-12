@@ -7,6 +7,11 @@
             echo $_SESSION['add'];  
             unset($_SESSION['add']); //remove session
           }
+
+          if(isset($_SESSION['del'])){
+            echo $_SESSION['del'];  
+            unset($_SESSION['del']); //remove session
+          }
           ?>
           </br>
           </br>
@@ -15,12 +20,13 @@
                     <thead>
                     <tr >
                         <th>ContractornId</th>
+                        <th>Nip</th>
                         <th>Regon</th>
                         <th>name</th>
                         <th>Vat?</th>
                         <th>street</th>
                         <th>numberH</th>
-                        <th>AnumberF</th>
+                        <th>numberF</th>
                         <th>Action</th>
                         </tr>
                     </thead>
@@ -35,7 +41,8 @@
                     if($rows>0){
                         while($rows = mysqli_fetch_assoc($res)){
                             $contractorId = $rows['contractorId'];
-                            $regon = $rows['regon'];
+                            $Nip = $rows['Nip'];
+                            $Regon = $rows['Regon'];
                             $name = $rows['name'];
                             $vat = $rows['vat'];
                             $street = $rows['street'];
@@ -47,15 +54,16 @@
                           <tbody>
                           <tr class="active-row">
                             <td><?php echo $contractorId ;?></td>
-                            <td><?php echo $regon ;?></td>
+                            <td><?php echo $Nip ;?></td>
+                            <td><?php echo $Regon ;?></td>
                             <td><?php echo $name ;?></td>
                             <td><?php echo $vat ;?></td>
                             <td><?php echo $street ;?></td>
                             <td><?php echo $numberH ;?></td> 
                             <td><?php echo $numberF ;?></td> 
                             <td>
-                                <a href="update.php?delegationId=<?php echo $delegationId;?>" class="submit-btn4">Update</a>
-                                <a href="delete.php?delegationId=<?php echo $delegationId;?>" class="submit-btn3">Delete</a>
+                                <a href="update.php?contractorId=<?php echo $contractorId;?>" class="submit-btn4">Update</a>
+                                <a href="delete.php?contractorId=<?php echo $contractorId;?>" class="submit-btn3">Delete</a>
                             </td> 
                             
                          
